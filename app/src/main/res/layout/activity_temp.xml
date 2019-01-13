@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.com.avishkar.Temp"
+    android:layout_margin="30dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="title"
+        android:id="@+id/title_temp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_temp"
+        android:hint="from"
+        android:id="@+id/from_temp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="destination"
+        android:layout_below="@+id/from_temp"
+        android:id="@+id/to_temp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/to_temp"
+        android:hint="days"
+        android:id="@+id/days_temp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="cost"
+        android:layout_below="@+id/days_temp"
+        android:id="@+id/cost_temp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/cost_temp"
+        android:layout_height="wrap_content"
+        android:text="save current tour data"
+        android:id="@+id/presentTourDetails"/>
+</RelativeLayout>

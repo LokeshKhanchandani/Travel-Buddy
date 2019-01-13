@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ramotion.foldingcell.FoldingCell xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    folding-cell:additionalFlipsCount="7"
+    folding-cell:animationDuration="1300"
+    android:id="@+id/folding_cell"
+    android:descendantFocusability="blocksDescendants"
+    folding-cell:cameraHeight="30">
+
+    <include layout="@layout/cell_content_layout"/>
+    <include layout="@layout/list_item" />
+
+</com.ramotion.foldingcell.FoldingCell>

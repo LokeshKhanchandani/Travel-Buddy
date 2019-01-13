@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorBlackTrans">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:gravity="left"
+        android:layout_gravity="left"
+        android:textSize="18sp"
+        android:text="Trip Details"/>
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/publish"
+        android:layout_gravity = "right"
+        android:background="@drawable/ic_subdirectory_arrow_right_black_24dp"/>
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:paddingRight="10dp"
+        android:id="@+id/share"
+        android:layout_gravity = "right"
+        android:background="@drawable/ic_share"/>
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:paddingRight="10dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/itirenary_list"
+        android:layout_gravity = "right"
+        android:background="@drawable/ic_note_add_black_24dp"/>
+
+
+
+
+</android.support.v7.widget.Toolbar>

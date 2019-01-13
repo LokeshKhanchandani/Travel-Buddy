@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorBlackTrans">
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:onClick="searchCity"
+        android:paddingRight="10dp"
+
+        android:id="@+id/recenter"
+        android:layout_gravity = "right"
+        android:background="@drawable/ic_gps_fixed_black_24dp"/>
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:onClick="searchCity"
+        android:paddingRight="10dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/search_city"
+        android:layout_gravity = "right"
+        android:background="@drawable/ic_search_black_24dp"/>
+
+
+
+</android.support.v7.widget.Toolbar>

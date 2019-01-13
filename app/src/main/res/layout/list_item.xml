@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/customshape"
+    android:padding="10dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.45"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/source_tv"
+            android:text="Source"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.1"
+            android:backgroundTint="#fff"
+            android:background="@drawable/ic_arrow_forward_black_24dp"
+            android:padding="8dp" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.45"
+            android:layout_marginRight="10dp"
+            android:id="@+id/destination_tv"
+            android:gravity="end"
+            android:textColor="#fff"
+            android:text="Destination"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/list_view_item"-->
+    <!--android:padding="8dp"-->
+    <!--android:orientation="vertical">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Start :"-->
+    <!--android:id="@+id/tv1"-->
+    <!--android:textSize="20dp"-->
+    <!--android:padding="8dp"-->
+    <!--android:textStyle="bold"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/source_tv"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignBottom="@+id/tv1"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_toStartOf="@+id/imageView"-->
+    <!--android:padding="8dp" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageView"-->
+    <!--android:layout_width="wrap_content"-->
+
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignBottom="@+id/source_tv"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:background="@drawable/ic_arrow"-->
+    <!--android:padding="8dp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_toEndOf="@+id/imageView"-->
+
+    <!--android:padding="8dp"-->
+    <!--android:text="End :"-->
+    <!--android:textSize="20dp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/destination_tv"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignBottom="@+id/tv2"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_toEndOf="@+id/tv2"-->
+    <!--android:padding="8dp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv3"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignBaseline="@+id/days"-->
+    <!--android:layout_alignBottom="@+id/days"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:text="Days :"-->
+    <!--android:padding="8dp"-->
+    <!--android:textSize="15dp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/days"-->
+    <!--android:padding="8dp"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/source_tv"-->
+    <!--android:layout_toEndOf="@+id/tv1" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv4"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/tv2"-->
+    <!--android:layout_toEndOf="@+id/imageView"-->
+    <!--android:padding="8dp"-->
+    <!--android:text="Date :"-->
+    <!--android:textSize="15dp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/date"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignBottom="@+id/tv4"-->
+    <!--android:layout_toEndOf="@+id/tv4"-->
+    <!--android:padding="8dp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:id="@+id/itirenary_list"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:layout_below="@id/date"-->
+    <!--android:inputType="textMultiLine"-->
+    <!--android:autoSizeTextType="uniform"-->
+    <!--/>-->
+    <!--</RelativeLayout>-->
+
+
+</FrameLayout>
